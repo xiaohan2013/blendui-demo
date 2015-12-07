@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlendUI示例</title>
+    <link rel="stylesheet" type="text/css" href="blendui/boost.min.css" />
+    <script type="text/javascript" src="blendui/boost.min.js"></script>
+</head>
+<body>
+
+    <div class="main-l">
+        <div class="mar-t-10">
+            <header data-blend-widget="header" class="blend-header">
+                <span class="blend-header-left">
+                    <a class="blend-header-item blend-action-back-icon" href="javascript:history.back();"></a>
+                </span>
+                <span class="blend-header-title">
+                    <span class="blend-header-item">标题栏名称</span>
+                </span>
+                <span class="blend-header-right">
+                    <a class="blend-header-item blend-action-back-icon" href="header.test2.html"><em></em></a>
+                </span>
+            </header>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $('.blend-tab').tab({
+        animate:true,
+        start:1
+    });
+    $('.blend-tab').tab('active', 2);
+</script>
+</html>
